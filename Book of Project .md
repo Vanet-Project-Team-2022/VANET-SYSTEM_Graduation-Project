@@ -9,3 +9,5 @@ The most vital service provided by the said network is the driving safety as roa
 VANET is serving the said purpose by sharing road safety and traffic analysis information through internet.
 According to Yong et al. (2016), the VANET architecture consist of vehicle and infrastructure components. Vehicle workings consists of the On-Board Unit (OBU) and the application that will be working for OBU to enable it to communicate. Moreover, infrastructure components consist of RSUs commonly connected to the internet. 
 In VANET, there are mainly two kinds of communication such as Vehicle to Vehicle (V2V) and Vehicle to Infrastructure (V2I) (Vijayakumar et al. 2016). V2V is a wireless communication between the vehicles whereas V2I is the communication between the vehicle and infrastructure. 
+
+we can read more details about the project and concepts with a good explaniation for each detail in this book : https://drive.google.com/file/d/1Ch46qaauLJCqwav9rwitD-I6zhdpwZn4/view?usp=sharing
