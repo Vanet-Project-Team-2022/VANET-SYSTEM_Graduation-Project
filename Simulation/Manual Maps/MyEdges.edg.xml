@@ -1,0 +1,38 @@
+<edges>
+<edge from="n1" to="n2" id="1t2" type="1L30"/>
+<edge from="n2" to="n1" id="2t1" type="1L30"/>
+
+<edge from="n2" to="n3" id="2t3" type="1L30"/>
+<edge from="n3" to="n2" id="3t2" type="1L30"/>
+
+<edge from="n4" to="n5" id="4t5" type="1L30"/>
+<edge from="n5" to="n4" id="5t4" type="1L30"/>
+
+<edge from="n5" to="n6" id="5t6" type="1L30"/>
+<edge from="n6" to="n5" id="6t5" type="1L30"/>
+
+<edge from="n7" to="n8" id="7t8" type="1L30"/>
+<edge from="n8" to="n7" id="8t7" type="1L30"/>
+
+<edge from="n8" to="n9" id="8t9" type="1L30"/>
+<edge from="n9" to="n8" id="9t8" type="1L30"/>
+
+<edge from="n1" to="n4" id="1t4" type="1L30"/>
+<edge from="n4" to="n1" id="4t1" type="1L30"/>
+
+<edge from="n4" to="n7" id="4t7" type="1L30"/>
+<edge from="n7" to="n4" id="7t4" type="1L30"/>
+
+<edge from="n2" to="n5" id="2t5" type="1L30"/>
+<edge from="n5" to="n2" id="5t2" type="1L30"/>
+
+<edge from="n5" to="n8" id="5t8" type="1L30"/>
+<edge from="n8" to="n5" id="8t5" type="1L30"/>
+
+<edge from="n3" to="n6" id="3t6" type="1L30"/>
+<edge from="n6" to="n3" id="6t3" type="1L30"/>
+
+<edge from="n6" to="n9" id="6t9" type="1L30"/>
+<edge from="n9" to="n6" id="9t6" type="1L30"/>
+
+</edges>

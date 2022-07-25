@@ -1,0 +1,7 @@
+<launch>
+    <copy file="streettest.net.xml" />
+    <copy file="MyRoute.rou.xml" />
+    <copy file="streettest.poly.xml" />
+    <copy file="Configtest.sumocfg" type="config" />
+</launch>
+
