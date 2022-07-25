@@ -1,0 +1,6 @@
+<shapes>
+    <poly id="blocker" type="building" color="1.00,0.00,0.00" fill="1" layer="4" shape="20,20 80,20 80,80 20,80 20,20"/>
+    <poly id="blocker1" type="building" color="1.00,0.00,0.00" fill="1" layer="4" shape="120,20 180,20 180,80 120,80 120,20"/>
+    <poly id="blocker2" type="building" color="1.00,0.00,0.00" fill="1" layer="4" shape="20,120 80,120 80,180 20,180 20,120"/>
+    <poly id="blocke3" type="building" color="1.00,0.00,0.00" fill="1" layer="4" shape="120,120 180,120 180,180 120,180 120,120"/>
+</shapes>

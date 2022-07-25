@@ -1,0 +1,17 @@
+<routes>
+   <vType id="vtype0" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="14" color="1,1,0"/>
+   <route id="route0" edges="1t2 2t3 3t6 6t9 9t8 8t7 7t4 4t1"/> 
+   <flow id="flow0" type="vtype0" route="route0" begin="0" period="0" number="1" arrivalPos="0" />
+	
+   <vType id="vtype1" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="14" color="1,1,0"/>
+   <route id="route1" edges="1t2 2t3 3t6 6t9 9t8 8t7 7t4 4t1"/> 
+   <flow id="flow1" type="vtype1" route="route1" begin="13" period="5" number="2" arrivalPos="0" />
+
+   <vType id="vtype2" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="14" color="1,1,0"/>
+   <route id="route2" edges="1t2 2t3 3t6 6t9 9t8 8t7 7t4 4t1"/> 
+   <flow id="flow2" type="vtype2" route="route2" begin="40" period="10" number="2" arrivalPos="0" />
+   
+   <vType id="vtype3" accel="2.6" decel="4.5" sigma="0.5" length="4.5" minGap="2.5" maxSpeed="14" color="1,1,0"/>
+   <route id="route3" edges="1t2 2t3 3t6 6t9 9t8 8t7 7t4 4t1"/> 
+   <flow id="flow3" type="vtype3" route="route3" begin="110" period="0" number="1" arrivalPos="0" />
+</routes>
