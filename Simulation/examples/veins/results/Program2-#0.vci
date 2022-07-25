@@ -1,0 +1,148 @@
+file 119517 1656027069                                          
+version 2
+run Program2-0-20220624-01:30:48-11856
+attr configname Program2
+attr datetime 20220624-01:30:48
+attr experiment Program2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network FinalProjectNetwork
+attr processid 11856
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.rsu[0].mobility.x 35
+param *.rsu[0].mobility.y 210
+param *.rsu[0].mobility.z 3
+param *.rsu[1].mobility.x 215
+param *.rsu[1].mobility.y 210
+param *.rsu[1].mobility.z 3
+param *.rsu[2].mobility.x 135
+param *.rsu[2].mobility.y 210
+param *.rsu[2].mobility.z 3
+param *.rsu[3].mobility.x 215
+param *.rsu[3].mobility.y 135
+param *.rsu[3].mobility.z 3
+param *.playgroundSizeX 300m
+param *.playgroundSizeY 600m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 0.5s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"streettest.launchd.xml\")"
+param *.rsu[0].mobility.x 35
+param *.rsu[0].mobility.y 135
+param *.rsu[0].mobility.z 3
+param *.rsu[1].mobility.x 135
+param *.rsu[1].mobility.y 40
+param *.rsu[1].mobility.z 3
+param *.rsu[2].mobility.x 135
+param *.rsu[2].mobility.y 210
+param *.rsu[2].mobility.z 3
+param *.rsu[3].mobility.x 215
+param *.rsu[3].mobility.y 135
+param *.rsu[3].mobility.z 3
+param *.rsu[*].applType "\"RsuApp\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 80mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"VehicleApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 23s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 FinalProjectNetwork.node[0].veinsmobility posx ETV
+vector 1 FinalProjectNetwork.node[0].veinsmobility posy ETV
+vector 2 FinalProjectNetwork.node[0].veinsmobility speed ETV
+vector 3 FinalProjectNetwork.node[0].veinsmobility acceleration ETV
+vector 4 FinalProjectNetwork.node[0].veinsmobility co2emission ETV
+vector 5 FinalProjectNetwork.node[1].veinsmobility posx ETV
+vector 6 FinalProjectNetwork.node[1].veinsmobility posy ETV
+vector 7 FinalProjectNetwork.node[1].veinsmobility speed ETV
+vector 8 FinalProjectNetwork.node[1].veinsmobility acceleration ETV
+vector 9 FinalProjectNetwork.node[1].veinsmobility co2emission ETV
+vector 10 FinalProjectNetwork.node[2].veinsmobility posx ETV
+vector 11 FinalProjectNetwork.node[2].veinsmobility posy ETV
+vector 12 FinalProjectNetwork.node[2].veinsmobility speed ETV
+vector 13 FinalProjectNetwork.node[2].veinsmobility acceleration ETV
+vector 14 FinalProjectNetwork.node[2].veinsmobility co2emission ETV
+vector 15 FinalProjectNetwork.node[3].veinsmobility posx ETV
+vector 16 FinalProjectNetwork.node[3].veinsmobility posy ETV
+vector 17 FinalProjectNetwork.node[3].veinsmobility speed ETV
+vector 18 FinalProjectNetwork.node[3].veinsmobility acceleration ETV
+vector 19 FinalProjectNetwork.node[3].veinsmobility co2emission ETV
+vector 20 FinalProjectNetwork.node[4].veinsmobility posx ETV
+vector 21 FinalProjectNetwork.node[4].veinsmobility posy ETV
+vector 22 FinalProjectNetwork.node[4].veinsmobility speed ETV
+vector 23 FinalProjectNetwork.node[4].veinsmobility acceleration ETV
+vector 24 FinalProjectNetwork.node[4].veinsmobility co2emission ETV
+9	4797 3767 30 808 14.5 99 170 0.973 9.1331009278298 402.44160673059 1742.5736267629
+8	8564 4045 30 808 14.5 99 170 -4.5 2.2123982076533 9.2855779271063 434.41445950932
+7	12609 3998 29 808 14 99 171 0 13.999989197811 967.97103575317 10616.142014378
+6	16607 3887 28 808 13.5 99 172 26.6 123.4 13349.927088601 1227620.0853001
+5	20494 3627 28 808 13.5 99 172 26.841951215888 223.4 30936.262581897 6290226.8908497
+14	24121 3899 40 814 19.5 102 166 0.973 8.8957928325815 386.41107251166 1627.4218022955
+13	28020 4299 40 814 19.5 102 166 -4.5 2.3223095513182 9.3168466738988 373.19769833179
+12	32319 4209 39 814 19 102 167 0 13.998643007444 968.49347224017 10239.310425411
+11	36528 3941 38 814 18.5 102 168 26.6 123.4 12626.34015922 1146060.4896415
+10	40469 3763 38 814 18.5 102 168 26.823848876545 223.4 29751.383503356 6005634.7675435
+24	44232 2765 462 822 51.5 106 110 0.973 8.8266588944044 325.06102328165 1495.712695067
+23	46997 3109 462 822 51.5 106 110 -4.5 2.3348854399752 7.2300007901136 392.95748850228
+22	50106 3104 461 822 51 106 111 1.2366724755738 13.995303483447 969.93533145032 10241.936740072
+21	53210 2421 460 822 50.5 106 112 26.6 123.4 8361.7075178434 825396.81819933
+20	55631 2802 460 822 50.5 106 112 26.641084562203 223.4 17239.31271662 3219315.8502723
+vector 25 FinalProjectNetwork.node[5].veinsmobility posx ETV
+vector 26 FinalProjectNetwork.node[5].veinsmobility posy ETV
+vector 27 FinalProjectNetwork.node[5].veinsmobility speed ETV
+vector 28 FinalProjectNetwork.node[5].veinsmobility acceleration ETV
+vector 29 FinalProjectNetwork.node[5].veinsmobility co2emission ETV
+4	58759 4859 4 837 1.5 113.5 225 0.973 8.8023355188858 538.18619620522 2291.7505171087
+3	63618 4684 4 837 1.5 113.5 225 -4.5 2.3535257115719 23.72245953893 558.25093282341
+2	68302 4696 3 837 1 113.5 226 0 13.997831066966 1375.8047504431 16355.387384874
+1	72998 5349 2 837 0.5 113.5 227 26.6 223.4 25253.099237794 3793836.0414889
+0	78347 4484 2 837 0.5 113.5 227 26.6 223.4 39950.064383866 8245145.3475246
+19	82831 4119 300 850 41.5 120 158 0.973 8.5128859532793 461.98254154044 2090.3296353666
+18	86950 4555 300 850 41.5 120 158 -4.5 2.4150285724411 23.772582086854 494.08730143702
+17	91505 4510 299 850 41 120 159 0.00051027970454982 13.990565208276 1372.1282887152 15706.852371352
+16	96015 3794 298 850 40.5 120 160 26.6 223.4 18912.144925336 3230759.1868571
+15	99809 3613 298 850 40.5 120 160 26.6 223.4 24941.278311728 4890541.4011172
+29	103422 3289 833 951 111.5 170.5 119 0.973 8.6009028911277 390.68560600918 1861.1149539631
+28	106711 3553 833 951 111.5 170.5 119 -4.5 2.3127507155854 23.638325227354 390.45397871858
+27	110264 3470 832 951 111 170.5 120 2.1116852246857 13.998037352657 1367.6259407665 16980.963195079
+26	113734 2799 831 951 110.5 170.5 121 26.6 223.4 15821.52171883 2940537.1483834
+25	116533 2982 831 951 110.5 170.5 121 26.6 223.4 16513.274576583 3017545.6709761
+

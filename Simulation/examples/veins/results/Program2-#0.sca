@@ -1,0 +1,440 @@
+version 2
+run Program2-0-20220624-01:30:48-11856
+attr configname Program2
+attr datetime 20220624-01:30:48
+attr experiment Program2
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network FinalProjectNetwork
+attr processid 11856
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.rsu[0].mobility.x 35
+param *.rsu[0].mobility.y 210
+param *.rsu[0].mobility.z 3
+param *.rsu[1].mobility.x 215
+param *.rsu[1].mobility.y 210
+param *.rsu[1].mobility.z 3
+param *.rsu[2].mobility.x 135
+param *.rsu[2].mobility.y 210
+param *.rsu[2].mobility.z 3
+param *.rsu[3].mobility.x 215
+param *.rsu[3].mobility.y 135
+param *.rsu[3].mobility.z 3
+param *.playgroundSizeX 300m
+param *.playgroundSizeY 600m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 0.5s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"streettest.launchd.xml\")"
+param *.rsu[0].mobility.x 35
+param *.rsu[0].mobility.y 135
+param *.rsu[0].mobility.z 3
+param *.rsu[1].mobility.x 135
+param *.rsu[1].mobility.y 40
+param *.rsu[1].mobility.z 3
+param *.rsu[2].mobility.x 135
+param *.rsu[2].mobility.y 210
+param *.rsu[2].mobility.z 3
+param *.rsu[3].mobility.x 215
+param *.rsu[3].mobility.y 135
+param *.rsu[3].mobility.z 3
+param *.rsu[*].applType "\"RsuApp\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 80mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"VehicleApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 23s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+scalar FinalProjectNetwork.node[1].appl generatedWSMs 1
+scalar FinalProjectNetwork.node[1].appl receivedWSMs 8
+scalar FinalProjectNetwork.node[1].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[1].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[1].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[1].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[1].nic.phy80211p busyTime 2.6976744186047e-05
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 ReceivedBroadcasts 8
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 SentPackets 1
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 SNIRLostPackets 2
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 TotalLostPackets 2
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 TimesIntoBackoff 1
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 SlotsBackoff 3
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 totalBusyTime 0.002321
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 sentPackets:count 1
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[1].nic.mac1609_4 channelBusy:timeavg 2.6988372093023e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[1].veinsmobility startTime 13.5
+scalar FinalProjectNetwork.node[1].veinsmobility totalTime 85.5
+scalar FinalProjectNetwork.node[1].veinsmobility stopTime 99.5
+scalar FinalProjectNetwork.node[1].veinsmobility minSpeed 0
+scalar FinalProjectNetwork.node[1].veinsmobility maxSpeed 13.999989197811
+scalar FinalProjectNetwork.node[1].veinsmobility totalDistance 482.37311626498
+scalar FinalProjectNetwork.node[1].veinsmobility totalCO2Emission 201.22080336529
+scalar FinalProjectNetwork.node[2].appl generatedWSMs 1
+scalar FinalProjectNetwork.node[2].appl receivedWSMs 7
+scalar FinalProjectNetwork.node[2].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[2].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[2].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[2].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[2].nic.phy80211p busyTime 2.2095238095238e-05
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 ReceivedBroadcasts 7
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 SentPackets 1
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 SNIRLostPackets 1
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 TotalLostPackets 1
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 TimesIntoBackoff 1
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 SlotsBackoff 3
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 totalBusyTime 0.002089
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 sentPackets:count 1
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[2].nic.mac1609_4 channelBusy:timeavg 2.4869047619048e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[2].veinsmobility startTime 18.5
+scalar FinalProjectNetwork.node[2].veinsmobility totalTime 83.5
+scalar FinalProjectNetwork.node[2].veinsmobility stopTime 102.5
+scalar FinalProjectNetwork.node[2].veinsmobility minSpeed 0
+scalar FinalProjectNetwork.node[2].veinsmobility maxSpeed 13.998643007444
+scalar FinalProjectNetwork.node[2].veinsmobility totalDistance 482.46921633946
+scalar FinalProjectNetwork.node[2].veinsmobility totalCO2Emission 193.20553625583
+scalar FinalProjectNetwork.node[4].appl generatedWSMs 1
+scalar FinalProjectNetwork.node[4].appl receivedWSMs 1
+scalar FinalProjectNetwork.node[4].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[4].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[4].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[4].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[4].nic.phy80211p busyTime 4.1428571428571e-06
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 ReceivedBroadcasts 1
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 SentPackets 1
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 TotalLostPackets 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 TimesIntoBackoff 1
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 SlotsBackoff 3
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 totalBusyTime 0.000465
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 sentPackets:count 1
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[4].nic.mac1609_4 channelBusy:timeavg 8.3035714285714e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[4].veinsmobility startTime 50.5
+scalar FinalProjectNetwork.node[4].veinsmobility totalTime 55.5
+scalar FinalProjectNetwork.node[4].veinsmobility stopTime 106.5
+scalar FinalProjectNetwork.node[4].veinsmobility minSpeed 1.2366724755738
+scalar FinalProjectNetwork.node[4].veinsmobility maxSpeed 13.995303483447
+scalar FinalProjectNetwork.node[4].veinsmobility totalDistance 483.87968478041
+scalar FinalProjectNetwork.node[4].veinsmobility totalCO2Emission 162.53051164083
+scalar FinalProjectNetwork.node[0].appl generatedWSMs 1
+scalar FinalProjectNetwork.node[0].appl receivedWSMs 8
+scalar FinalProjectNetwork.node[0].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[0].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[0].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[0].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[0].nic.phy80211p busyTime 2.0440528634361e-05
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 ReceivedBroadcasts 8
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 SentPackets 1
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 SNIRLostPackets 2
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 TotalLostPackets 2
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 TimesIntoBackoff 1
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 SlotsBackoff 1
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 totalBusyTime 0.002321
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 sentPackets:count 1
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[0].nic.mac1609_4 channelBusy:timeavg 2.0449339207048e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[0].veinsmobility startTime 0.5
+scalar FinalProjectNetwork.node[0].veinsmobility totalTime 113
+scalar FinalProjectNetwork.node[0].veinsmobility stopTime 114
+scalar FinalProjectNetwork.node[0].veinsmobility minSpeed 0
+scalar FinalProjectNetwork.node[0].veinsmobility maxSpeed 13.997831066966
+scalar FinalProjectNetwork.node[0].veinsmobility totalDistance 685.05973798388
+scalar FinalProjectNetwork.node[0].veinsmobility totalCO2Emission 269.09309810261
+scalar FinalProjectNetwork.node[3].appl generatedWSMs 1
+scalar FinalProjectNetwork.node[3].appl receivedWSMs 1
+scalar FinalProjectNetwork.node[3].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[3].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[3].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[3].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[3].nic.phy80211p busyTime 2.9e-06
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 ReceivedBroadcasts 1
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 SentPackets 1
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 TotalLostPackets 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 TimesIntoBackoff 1
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 SlotsBackoff 2
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 totalBusyTime 0.000465
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 sentPackets:count 1
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[3].nic.mac1609_4 channelBusy:timeavg 5.8125e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[3].veinsmobility startTime 40.5
+scalar FinalProjectNetwork.node[3].veinsmobility totalTime 79.5
+scalar FinalProjectNetwork.node[3].veinsmobility stopTime 120.5
+scalar FinalProjectNetwork.node[3].veinsmobility minSpeed 0.00051027970454982
+scalar FinalProjectNetwork.node[3].veinsmobility maxSpeed 13.990565208276
+scalar FinalProjectNetwork.node[3].veinsmobility totalDistance 682.72405246455
+scalar FinalProjectNetwork.node[3].veinsmobility totalCO2Emission 230.99127077022
+scalar FinalProjectNetwork.node[5].appl generatedWSMs 0
+scalar FinalProjectNetwork.node[5].appl receivedWSMs 0
+scalar FinalProjectNetwork.node[5].appl generatedBSMs 0
+scalar FinalProjectNetwork.node[5].appl receivedBSMs 0
+scalar FinalProjectNetwork.node[5].appl generatedWSAs 0
+scalar FinalProjectNetwork.node[5].appl receivedWSAs 0
+scalar FinalProjectNetwork.node[5].nic.phy80211p busyTime 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 ReceivedBroadcasts 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 SentPackets 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 TimesIntoBackoff 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 SlotsBackoff 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 totalBusyTime 0
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.node[5].nic.mac1609_4 channelBusy:timeavg 0
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.node[5].veinsmobility startTime 110.5
+scalar FinalProjectNetwork.node[5].veinsmobility totalTime 60
+scalar FinalProjectNetwork.node[5].veinsmobility stopTime 171
+scalar FinalProjectNetwork.node[5].veinsmobility minSpeed 2.1116852246857
+scalar FinalProjectNetwork.node[5].veinsmobility maxSpeed 13.998037352657
+scalar FinalProjectNetwork.node[5].veinsmobility totalDistance 680.73648294223
+scalar FinalProjectNetwork.node[5].veinsmobility totalCO2Emission 195.34280300459
+scalar FinalProjectNetwork.manager roiArea 0
+scalar FinalProjectNetwork.rsu[0].appl generatedWSMs 3
+scalar FinalProjectNetwork.rsu[0].appl receivedWSMs 3
+scalar FinalProjectNetwork.rsu[0].appl generatedBSMs 0
+scalar FinalProjectNetwork.rsu[0].appl receivedBSMs 0
+scalar FinalProjectNetwork.rsu[0].appl generatedWSAs 0
+scalar FinalProjectNetwork.rsu[0].appl receivedWSAs 0
+scalar FinalProjectNetwork.rsu[0].nic.phy80211p busyTime 1.74e-06
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 ReceivedBroadcasts 3
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 SentPackets 3
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 RXTXLostPackets 3
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 TotalLostPackets 3
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 TimesIntoBackoff 3
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 SlotsBackoff 8
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 totalBusyTime 0.001395
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 sentPackets:count 3
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.rsu[0].nic.mac1609_4 channelBusy:timeavg 3.4875e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.rsu[1].appl generatedWSMs 3
+scalar FinalProjectNetwork.rsu[1].appl receivedWSMs 9
+scalar FinalProjectNetwork.rsu[1].appl generatedBSMs 0
+scalar FinalProjectNetwork.rsu[1].appl receivedBSMs 0
+scalar FinalProjectNetwork.rsu[1].appl generatedWSAs 0
+scalar FinalProjectNetwork.rsu[1].appl receivedWSAs 0
+scalar FinalProjectNetwork.rsu[1].nic.phy80211p busyTime 6.96e-06
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 ReceivedBroadcasts 9
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 SentPackets 3
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 SNIRLostPackets 3
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 RXTXLostPackets 1
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 TotalLostPackets 4
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 TimesIntoBackoff 3
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 SlotsBackoff 2
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 totalBusyTime 0.002787
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 sentPackets:count 3
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.rsu[1].nic.mac1609_4 channelBusy:timeavg 6.9675e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.rsu[2].appl generatedWSMs 3
+scalar FinalProjectNetwork.rsu[2].appl receivedWSMs 3
+scalar FinalProjectNetwork.rsu[2].appl generatedBSMs 0
+scalar FinalProjectNetwork.rsu[2].appl receivedBSMs 0
+scalar FinalProjectNetwork.rsu[2].appl generatedWSAs 0
+scalar FinalProjectNetwork.rsu[2].appl receivedWSAs 0
+scalar FinalProjectNetwork.rsu[2].nic.phy80211p busyTime 1.74e-06
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 ReceivedBroadcasts 3
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 SentPackets 3
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 RXTXLostPackets 3
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 TotalLostPackets 3
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 TimesIntoBackoff 3
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 SlotsBackoff 5
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 totalBusyTime 0.001395
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 sentPackets:count 3
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.rsu[2].nic.mac1609_4 channelBusy:timeavg 3.4875e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar FinalProjectNetwork.rsu[3].appl generatedWSMs 3
+scalar FinalProjectNetwork.rsu[3].appl receivedWSMs 6
+scalar FinalProjectNetwork.rsu[3].appl generatedBSMs 0
+scalar FinalProjectNetwork.rsu[3].appl receivedBSMs 0
+scalar FinalProjectNetwork.rsu[3].appl generatedWSAs 0
+scalar FinalProjectNetwork.rsu[3].appl receivedWSAs 0
+scalar FinalProjectNetwork.rsu[3].nic.phy80211p busyTime 3.48e-06
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 ReceivedBroadcasts 6
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 SentPackets 3
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 SentAcknowledgements 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 RetriesExceeded 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 SNIRLostPackets 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 RXTXLostPackets 1
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 TotalLostPackets 1
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 TooLittleTime 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 TimesIntoBackoff 3
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 SlotsBackoff 4
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 NumInternalContention 0
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 totalBusyTime 0.002091
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 sentPackets:count 3
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar FinalProjectNetwork.rsu[3].nic.mac1609_4 channelBusy:timeavg 5.2275e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+
