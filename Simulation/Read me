@@ -1,0 +1,12 @@
+For route Generation we use SUMO : 
+"Simulation of Urban MObility" (SUMO) is an open source, highly portable, microscopic and continuous traffic simulation package designed to handle large networks. It allows for intermodal simulation including pedestrians and comes with a large set of tools for scenario creation.
+can be downloaded from here: https://sumo.dlr.de/docs/Downloads.php
+
+For Simulation We used Veins Library : 
+Veins is an open source framework for running vehicular network simulations. It is based on two well-established simulators: OMNeT++, an event-based network simulator, and SUMO, a road traffic simulator. It extends these to offer a comprehensive suite of models for IVC simulation.
+can be downloded form here: http://veins.car2x.org/
+
+Simulation Program is omnet++ : 
+OMNeT++ is a modular, component-based C++ simulation library and framework, primarily for building network simulators. OMNeT++ can be used for free for non-commercial simulations like at academic institutions and for teaching.
+can be downloded form here: https://omnetpp.org/download/
+
