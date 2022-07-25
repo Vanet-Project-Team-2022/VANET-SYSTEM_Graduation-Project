@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<routes> <!-- The opening tag -->
+
+   <!-- Vehicle types -->
+   <vType id="passenger" length="5.0" width="2.0" maxSpeed="70.0" accel="2.6" decel="4.5" sigma="0.5"/>
+
+   <!-- Routes + associated vehicles & flows -->
+   <route id="trip-0" color="Orange" edges="-35211929#11 -35211929#10 -35211929#8 -35211929#7 -35211929#6 -35211929#4 -35211929#3 -35211929#1 -690499352#0"/>
+   <vehicle id="vehicle-0" type="passenger" color="Magenta" depart="0.0" route="trip-0"/>
+   <vehicle id="vehicle-1" type="passenger" color="Magenta" depart="0.01" route="trip-0"/>
+   <vehicle id="vehicle-2" type="passenger" color="Magenta" depart="0.02" route="trip-0"/>
+   <vehicle id="vehicle-3" type="passenger" color="Magenta" depart="0.03" route="trip-0"/>
+   <vehicle id="vehicle-4" type="passenger" color="Magenta" depart="0.04" route="trip-0"/>
+   <vehicle id="vehicle-5" type="passenger" color="Magenta" depart="0.05" route="trip-0"/>
+   <vehicle id="vehicle-6" type="passenger" color="Magenta" depart="0.06" route="trip-0"/>
+   <vehicle id="vehicle-7" type="passenger" color="Magenta" depart="0.07" route="trip-0"/>
+   <vehicle id="vehicle-8" type="passenger" color="Magenta" depart="50" route="trip-0"/>
+   
+</routes> <!-- The closing tag -->
