@@ -1,0 +1,8 @@
+this is an application for VANET System 
+The System can be seen here : https://drive.google.com/drive/folders/1ZMDBWGlLRtJTni6phiRE7ILQZKPdKFTf?usp=sharing
+
+The System is about two cars in crossroads to avoid accident the two cars communicate with each other using ESPNOW protocol to send data to each other and avoid accident details is explained in book
+Arduino language is used to program the system 
+Arduino designs, manufactures, and supports electronic devices and software, allowing people around the world to easily access advanced technologies that interact with the physical world. 
+Our products are straightforward, simple, and powerful, ready to satisfy users’ needs from students to makers and all the way to professional developers.
+can be downloaded from here : https://www.arduino.cc/en/software 
