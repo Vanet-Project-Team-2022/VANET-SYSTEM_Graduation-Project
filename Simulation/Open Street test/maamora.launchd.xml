@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- maamora.launchd.xml -->
+
+<launch>
+    <copy file="maamora.net.xml" />
+    <copy file="maamoraRoutes.rou.xml" />
+    <copy file="maamora.poly.xml" />
+    <copy file="maamora.sumo.cfg" type="config" />
+</launch>
