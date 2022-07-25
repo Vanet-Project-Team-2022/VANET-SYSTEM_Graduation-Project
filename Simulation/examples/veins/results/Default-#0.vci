@@ -1,0 +1,146 @@
+file 75157 1645207587                                           
+version 2
+run Default-0-20220218-20:02:43-220
+attr configname Default
+attr datetime 20220218-20:02:43
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network RSUExampleScenario
+attr processid 220
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 300m
+param *.playgroundSizeY 600m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+param *.manager.updateInterval 0.5s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"streettest.launchd.xml\")"
+param *.rsu[0].mobility.x 40
+param *.rsu[0].mobility.y 190
+param *.rsu[0].mobility.z 3
+param *.rsu[1].mobility.x 135
+param *.rsu[1].mobility.y 49
+param *.rsu[1].mobility.z 3
+param *.rsu[2].mobility.x 135
+param *.rsu[2].mobility.y 290
+param *.rsu[2].mobility.z 3
+param *.rsu[3].mobility.x 235
+param *.rsu[3].mobility.y 190
+param *.rsu[3].mobility.z 3
+param *.rsu[*].applType "\"MyVeinsRsuAppTest\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 80mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 1
+param *.node[*0].veinsmobility.accidentStart 23s
+param *.node[*0].veinsmobility.accidentDuration 30s
+
+vector 0 RSUExampleScenario.node[0].veinsmobility posx ETV
+vector 1 RSUExampleScenario.node[0].veinsmobility posy ETV
+vector 2 RSUExampleScenario.node[0].veinsmobility speed ETV
+vector 3 RSUExampleScenario.node[0].veinsmobility acceleration ETV
+vector 4 RSUExampleScenario.node[0].veinsmobility co2emission ETV
+vector 5 RSUExampleScenario.node[1].veinsmobility posx ETV
+vector 6 RSUExampleScenario.node[1].veinsmobility posy ETV
+vector 7 RSUExampleScenario.node[1].veinsmobility speed ETV
+vector 8 RSUExampleScenario.node[1].veinsmobility acceleration ETV
+vector 9 RSUExampleScenario.node[1].veinsmobility co2emission ETV
+vector 10 RSUExampleScenario.node[2].veinsmobility posx ETV
+vector 11 RSUExampleScenario.node[2].veinsmobility posy ETV
+vector 12 RSUExampleScenario.node[2].veinsmobility speed ETV
+vector 13 RSUExampleScenario.node[2].veinsmobility acceleration ETV
+vector 14 RSUExampleScenario.node[2].veinsmobility co2emission ETV
+vector 15 RSUExampleScenario.node[3].veinsmobility posx ETV
+vector 16 RSUExampleScenario.node[3].veinsmobility posy ETV
+vector 17 RSUExampleScenario.node[3].veinsmobility speed ETV
+vector 18 RSUExampleScenario.node[3].veinsmobility acceleration ETV
+vector 19 RSUExampleScenario.node[3].veinsmobility co2emission ETV
+0	4091 1785 2 382 0.5 44.5 89 33.045700664058 223.4 16099.582494162 3295075.6172837
+1	5876 1929 2 382 0.5 44.5 89 26.6 87.765682181625 5165.5202377195 375153.01939364
+2	7805 1754 3 382 1 44.5 88 0 13.997325593969 501.42661335662 5786.4466136812
+3	9559 1693 4 382 1.5 44.5 87 -4.5 2.2478834550409 -4.2305260771959 273.51543167568
+4	11252 1785 4 382 1.5 44.5 87 0.973 8.8023355188858 204.49400330668 879.16813509192
+5	13037 1488 22 382 10.5 44.5 69 33.047096229122 223.4 11664.335965826 2305691.4835571
+6	14525 1430 22 382 10.5 44.5 69 26.6 80.764389361051 3234.9025481623 192217.91573849
+7	15955 1824 23 382 11 44.5 68 0.00030774493400292 13.989294001602 487.33562499265 5471.0083738936
+8	17779 1861 24 382 11.5 44.5 67 -4.5 2.2290409937641 -4.1823252999084 205.85716809243
+9	19640 1579 24 382 11.5 44.5 67 0.973 8.2784761634333 172.83503267731 737.7154139238
+10	21219 1398 32 382 15.5 44.5 59 33.046218707954 223.4 9366.3931093376 1789722.3403794
+11	22617 1234 32 382 15.5 44.5 59 26.6 73.725089737632 2318.5069820025 111932.48573941
+12	23851 1594 33 382 16 44.5 58 0.04185571600971 13.998643007444 473.00810261315 5290.4534047183
+13	25445 1617 34 382 16.5 44.5 57 -4.5 2.3223095513182 -3.9838467643614 194.16192287723
+14	27062 1380 34 382 16.5 44.5 57 0.973 8.8957928325815 155.51166291152 676.46922650434
+15	28442 251 274 382 40.5 44.5 9 33.04829800309 53.068468268946 367.41547833098 15394.079014653
+16	28693 154 274 382 40.5 44.5 9 26.6 26.6 239.4 6368.04
+17	28847 223 275 382 41 44.5 8 2.0413991436252 8.6390473310415 43.065942097974 269.89838996683
+18	29070 197 276 382 41.5 44.5 7 1.6789154965617 2.1925707844179 13.195296374833 25.079949964375
+19	29267 194 276 382 41.5 44.5 7 2.5889405090649 5.395392578497 28.413263396443 121.17152191293
+vector 20 RSUExampleScenario.node[4].veinsmobility posx ETV
+vector 21 RSUExampleScenario.node[4].veinsmobility posy ETV
+vector 22 RSUExampleScenario.node[4].veinsmobility speed ETV
+vector 23 RSUExampleScenario.node[4].veinsmobility acceleration ETV
+vector 24 RSUExampleScenario.node[4].veinsmobility co2emission ETV
+19	29782 1241 443 828 45 69.5 50 0.973 8.5128859532793 183.88314925626 1063.7379600946
+18	31023 1361 443 828 45 69.5 50 -4.5 2.3236071133846 -4.0720566544152 261.5969358738
+17	32384 1397 443 828 45 69.5 50 6.4986628549623 13.981604901641 522.68755860458 5867.9799469418
+16	33781 1114 443 828 45 69.5 50 26.6 123.4 4114.2118417214 427046.16398879
+15	34895 1249 443 828 45 69.5 50 26.764320994825 123.4 4738.2154156468 500428.2818649
+24	36144 1490 456 998 51.5 80.5 59 0.973 8.4134099224046 218.99625637544 1211.0467160935
+23	37634 1661 456 998 51.5 80.5 59 -4.5 2.2209732280998 7.1402212262589 298.66908165127
+22	39295 1670 455 998 51 80.5 60 2.0662283016242 13.98333489679 562.22632514327 5956.1492250965
+21	40965 1325 454 998 50.5 80.5 61 26.6 123.4 4504.4425333042 448705.03408551
+20	42290 1545 454 998 50.5 80.5 61 27.105220138023 123.4 5356.7435681383 546014.2948675
+9	43835 1787 443 1005 45 83 77 0.973 8.9241919864557 221.27869304106 1071.9905476867
+8	45622 1988 443 1005 45 83 77 -4.5 2.4345106285391 13.497936822931 302.68151081386
+7	47610 1951 443 1005 45 83 77 0 13.997651528092 478.44314824694 4664.7585169839
+6	49561 1656 443 1005 45 83 77 80.764505182908 123.4 8378.4237511411 939595.42637073
+5	51217 1774 443 1005 45 83 77 27.20437154369 223.4 12556.647155944 2385298.8220161
+14	52991 2050 443 1041 45 85.5 82 0.973 8.5637986834903 204.21653757025 895.05400324813
+13	55041 2438 443 1041 45 85.5 82 -3.4508922484686 2.2876016214676 13.191986439747 175.64379420154
+12	57479 2345 443 1041 45 85.5 82 0 13.884518194054 496.05860378532 4402.3881582755
+11	59824 1879 443 1041 45 85.5 82 73.740513534876 123.4 8679.987893501 958815.58737849
+10	61703 1960 443 1041 45 85.5 82 26.753337289543 223.4 13498.332969342 2597569.5238366
+4	63663 2365 443 1056 45 93 97 0.973 8.3687221916632 292.74582604484 1374.0992570952
+3	66028 2425 443 1056 45 93 97 -4.5 2.4980420268859 27.927501873854 293.16340510138
+2	68453 2391 443 1056 45 93 97 0 13.9935087416 866.35427382093 10474.948349225
+1	70844 2310 443 1056 45 93 97 87.765682181625 223.4 16477.921598869 3101897.2287893
+0	73154 2001 443 1056 45 93 97 26.6 223.4 14805.942177359 2932778.9412235
+
